@@ -1,0 +1,106 @@
+*{
+
+	margin: 0;/*top - right - bottom - left*/
+	padding: 0;
+	border: 0;
+	font-family: Arial, sans-serif;
+	
+}
+
+*::placeholder{
+
+			color: white;
+}
+
+
+#formulario-login{
+
+	margin-top: 150px;
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	padding-bottom: auto;
+
+}
+
+
+
+#formulario-login form{
+
+
+	width: 520px;
+	height: 350px;
+	/*/*margin: 200px auto;top - right - bottom - left*/
+	border: 1px solid #000;
+	text-align: center;
+
+
+}
+
+#formulario-login label{
+
+	display: block;
+	padding: 3px 0;
+	margin-right: 160px;
+			
+}
+
+/*	*/	
+#formulario-login .logcontainer{
+
+			
+	margin-top: 10px;
+	
+}
+
+
+#formulario-login input{
+
+	padding: 3px;
+	width: 200px;
+	height: 25px;
+	outline: none;
+	border: 1px solid #000;
+	font-weight: bold;
+	background-color: #ca0035;
+	color: #fff;
+			
+}
+
+/*Cor de fundo do autocomplete*/
+input:-webkit-autofill{
+
+	-webkit-box-shadow: 0 0 0 30px #ca0035 inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+
+.logo {
+
+	text-align: center;
+}
+
+
+.logo img{
+
+ 	width: 150px;
+	margin-top: 10px;
+	content:  url("../img/logoqs.png");
+}
+
+		
+#formulario-login .botao{
+
+	width: 100px;
+	height: 25px;
+	display: block;
+	cursor: pointer;
+	color: #fff;
+	background: #ca0035;
+	margin: 10px auto;
+}
