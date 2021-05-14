@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="Assets/css/controllersstyle.css">
 	<link rel="sortcut icon" href="Assets/img/logoqs.png" type="image/x-icon">
+	<script type="text/javascript" src="JavaScript/javacmd.js"></script>
 	<title>Quick Snack - Home</title>
 
 </head>
@@ -50,20 +51,4 @@
 			
 	</header>
 
-<script type="text/javascript">
-	
-
-	function sair(login){
-
-		var esc = confirm("Deseja sair do login "+login+" ?");
-
-		if(esc){
-
-			location.href = "Controllers/logoutController.php";
-		}
-	}
-
-
-
-</script>
-	<main>
+<main>

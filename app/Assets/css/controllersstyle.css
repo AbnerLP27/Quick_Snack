@@ -145,6 +145,23 @@ input[type='checkbox']{
 
 
 
+#esquerda{
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 45%;
+}
+
+#direita{
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 50%;
+	height: 70%;
+}
+
+
+
 
 #botao {
 
@@ -162,3 +179,14 @@ input[type='checkbox']{
 
 
 
+
+select{
+
+	width: 270px;
+	height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 5px;
+
+
+}

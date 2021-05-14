@@ -37,7 +37,7 @@ $allFun = $fun->consultarALLFun();
 
 	
 
-	<a id="newElement" href="?pagina=addFuncionario">
+	<a id="newElement" href="?pagina=addfun">
 
 		Cadastrar Funcionario
 	</a>
@@ -84,7 +84,7 @@ $allFun = $fun->consultarALLFun();
 
 			<td><?php print $linha['cargo']?></td>	
 			<td>
-				<a id="editar">
+				<a id="editar" href="?pagina=editarfun">
 					Editar
 				</a>
 			</td>
@@ -98,44 +98,5 @@ $allFun = $fun->consultarALLFun();
 
 	</table>
 </div>
-<script type="text/javascript">
-	
-	function desativar(atv, codFun, nome){
 
-		var escolha;
-
-		if(atv == 1){
-
-
-			escolha = confirm("Desativar o acesso do funcionário "+nome+" ?");
-		
-			if(escolha){
-
-				location.href = '../../app/Controllers/FunDesativarController.php?id_fun='+codFun;
-				alert("Funcionário "+nome+" desativado com sucesso!");
-			}
-
-			return escolha;
-
-		}else if(atv==0){
-
-
-			escolha = confirm("Ativar o acesso do funcionário "+nome+" ?");
-
-			if(escolha){
-
-				location.href = '../../app/Controllers/FunDesativarController.php?id_fun='+codFun;
-
-				alert("Funcionário "+nome+" ativado com sucesso!");
-
-			}
-
-			return escolha; 
-		}
-
-		
-
-	}
-
-</script>
 

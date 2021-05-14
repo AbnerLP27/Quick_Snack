@@ -95,39 +95,3 @@ $allProds = $produtos->consultarALLProd();
 </div>
 
 
-<script type="text/javascript">
-
-
-	function desc(id, descon, descricao){//Função em JavaScript para descontinuar/Continuar Prod
-
-		if(descon == 0){//O produto está continuado
-
-			var esc = confirm("Descontinuar "+descricao+" ?");//Descontinuar produto Sim/Não
-
-			if(esc){//true
-				
-			
-
-				location.href = '../../app/Controllers/ProdutosDescController.php?id_prod='+id;
-				alert("Produto "+descricao+" descontinuado com sucesso! ");
-
-			}
-
-			return esc;
-
-		}else if(descon == 1){//O produto está descontinuado
-
-			var esc = confirm("Continuar "+descricao+" ?");//Continuar Produto Sim/Não
-
-			if(esc){
-
-				location.href = '../../app/Controllers/ProdutosDescController.php?id_prod='+id;
-				alert("Produto "+descricao+" está continuado com sucesso! ");
-			}
-
-			return esc;
-		}
-		
-	}
-
-</script>

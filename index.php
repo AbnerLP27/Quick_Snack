@@ -4,7 +4,6 @@
 
 
 	<meta charset="utf-8">
-	<base href="http://quicksnack.local/"/>
 	<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
 	<link rel="stylesheet" type="text/css" href="app/Assets/css/loginstyle.css">
 	<link rel="sortcut icon" href="app/Assets/img/logoqs.png" type="image/x-icon">
@@ -13,9 +12,6 @@
 
 </head>
 <body>
-
-<!--Teste-->
-
 
 
 	<div id="formulario-login">

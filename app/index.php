@@ -52,6 +52,8 @@ include 'header.php';
 	case 'addEstoque': include 'Views/Estoque/add.php'; break;
 	case 'editarEstoque': include 'Views/Estoque/editar.php'; break;
 	case 'funcionario':include 'Views/Funcionarios/index.php';break;
+	case 'addfun':include 'Views/Funcionarios/add.php';break;
+	case 'editarfun':include 'Views/Funcionarios/editar.php';break;
 	
 
 	default: include 'Views/home.php';break;

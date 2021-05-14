@@ -12,7 +12,7 @@ class Cargo extends DataBase {
 	public function __construct(){
 
 
-		$this->conn = $this->conexao();
+		$this->conn = $this->connect();
 
 
 	}
