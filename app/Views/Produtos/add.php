@@ -16,7 +16,7 @@
 			<legend>Informações do Produto</legend>
 
 				<label>Descrição</label>
-		     	<input type="text" required name="descricao" placeholder="Descrição" class="input">
+		     	<input type="text" autofocus required name="descricao" placeholder="Descrição" class="input">
 					
 					
 				<label for="preco">Preço de venda</label>

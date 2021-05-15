@@ -19,7 +19,7 @@ require_once('../Config/config.php');
 
     }
 
-	$params = array($login, $senha);
+	$params = array($login,md5($senha));
 
     $fun = new Funcionario();
 

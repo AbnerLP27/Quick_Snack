@@ -55,11 +55,11 @@ select{
 				</select>
 
 				<label>Quantidade</label>
-		     	<input type="number" min="1" max="1000" required name="qtd" placeholder="1" class="input">
+		     	<input type="number" min="1" max="1000" required name="qtd" placeholder="0" class="input">
 					
 					
 				<label for="preco">Mínimo</label>
-				<input type="number" min="1" max="1000" required  placeholder="1" name="min" class="input">
+				<input type="number" min="1" max="1000" required  placeholder="0" name="min" class="input">
 
 					
 			

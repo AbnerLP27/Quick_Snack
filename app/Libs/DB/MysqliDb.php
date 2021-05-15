@@ -13,8 +13,14 @@
  * @version   2.9.3
  */
 
+define("HOST","localhost");
+define("USER", "root");
+define("PASS","");
+define("DBNAME","quick_snack");
 class MysqliDb
 {
+
+
 
     /**
      * Static instance of self

@@ -1,7 +1,7 @@
 <?php
 
 
-
+/*=============[ Carregar Classes ]================*/
 
 date_default_timezone_set('America/Sao_Paulo');
 
@@ -21,13 +21,4 @@ spl_autoload_register(function($nome_classe){
 });
 
 
-/*
-	Configuração do DataBase
-
-*/
-
-define("HOST","localhost");
-define("USER", "root");
-define("PASS","");
-define("DBNAME","quick_snack");
-Define("Models",dirname(__DIR__).DIRECTORY_SEPARATOR.'Models');
+define("Models",dirname(__DIR__).DIRECTORY_SEPARATOR.'Models');

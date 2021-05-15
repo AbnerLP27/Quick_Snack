@@ -25,7 +25,7 @@ select {
 			<legend>Informações da Mesa</legend>
 
 				<label>Nº Mesa</label>
-		     	<input type="text" required name="num_mesa" placeholder="Nº Mesa" class="input">
+		     	<input type="text" required autofocus name="num_mesa" placeholder="Nº Mesa" class="input">
 					
 					
 				<label for="preco">Status</label>

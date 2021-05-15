@@ -55,7 +55,7 @@ class Pedidos extends DataBase {
 	public function consultarALLPed(){
 
 
-		return $this->conn->get('pedidos');//Editar tabela no banco
+		return $this->conn->get('lista_pedidos');//Editar tabela no banco
 
 
 	}

@@ -1,7 +1,7 @@
 <?php
 
-
-	require_once('DB/MysqliDb.php');
+	
+	require_once('Libs/DB/MysqliDb.php');
 
 
 
@@ -14,17 +14,34 @@ class DataBase{
 	/*[ CRIAR A CONEXÃO COM O BANCO DE DADOS ]*/
 	public function connect(){
 
-		$database = new MysqliDb('localhost', 'root', '', 'quick_snack');
-
-		if (!$database->connect()) {//Se não conectado
+		try{
 			
-			$this->db = $database;
-			return $this->db;
+			$database = new MysqliDb(HOST, USER, PASS, DBNAME);
+
+			if (!@$database->connect()) {//Se não conectado
 			
-		}else{
+				$this->db = $database;
+				return $this->db;
+			
+			}
+			
+		}catch(Exception $ex){
 
 
-			echo "Error connect in DataBase.";
+			
+			print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ../../index.php'> 
+
+         	<script type='text/javascript'>
+
+         		window.alert('Sem conexão com o DataBase. Entre em contato com a Central Quick Snack para obter mais informações.')
+
+        	 </script> ";   
+
+         exit;
 		}
+
+
+
+
 	}
 }

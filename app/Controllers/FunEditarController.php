@@ -24,7 +24,7 @@ require('../Config/config.php');
 
 $cadFunc = array("nome" => $nome,
 				 "login" => $login,
-				 "senha" => $senha,
+				 "senha" => md5($senha),
 				 "cep" => $cep,
 				 "tel_cel" => $tel_cel,
 				 "ativado" => $atv,

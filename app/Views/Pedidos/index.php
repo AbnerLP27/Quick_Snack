@@ -73,7 +73,7 @@ $allPed = $pedidos->consultarALLPed();
 			<td><?php echo $linha['data']?></td>
 			<td><?php echo $linha['situacao']?></td>
             <td><?php echo $linha['desconto']?>%</td>
-            <td><?php echo $linha['cod_funcionario']?></td>
+            <td><?php echo $linha['nome']?></td>
             <td><?php echo $linha['cod_mesa']?></td>
 
 		</tr>

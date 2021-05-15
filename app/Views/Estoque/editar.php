@@ -7,6 +7,18 @@ require_once('Config/Config.php');
 $estoque = new Estoque();
 $prodEtq = $estoque->obterLinha($_GET['editar']);
 
+if(empty($prodEtq)){//Caso altere o editar na URL
+
+	print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=estoque'>
+		<script type='text/javascript'>
+
+         		window.alert('Estoque não encontrado. Tente Novamente.');
+         		
+        </script>"; 
+	
+	exit;
+
+}
 
 ?>
 

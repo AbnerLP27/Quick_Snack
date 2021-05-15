@@ -28,26 +28,33 @@
 		<?php if(isset($_SESSION['login'])): ?>
 
 		<a id="pre" style="cursor: pointer; text-decoration: underline;"  
-		onclick="sair('<?php echo $_SESSION['login']?>');">
+		onclick="sair('<?php print $_SESSION['login']?>');">
 		<!--href="Controllers/logoutController.php"-->
 			
 			<?php echo $_SESSION['login'].' - '.$_SESSION['cargo'].'  '; ?>
 			<img id="icon"/>
 		</a>
 
-		<?php endif;?>
 		
-
+		
+		<?php if($_SESSION['cargo'] == "Gerente"):?><!--Grente-->>
 		<div id="menu">
 			
-			<a href="?pagina=home">Home</a>
+			<a href="?pagina=home" >Home</a>
 			<a href="?pagina=pedidos">Pedido</a>
 			<a href="?pagina=produto">Produto</a>
 			<a href="?pagina=mesa">Mesa</a>
 			<a href="?pagina=estoque">Estoque</a>
 			<a href="?pagina=funcionario">Funcionario</a>
-
 		</div>
+		<?php elseif($_SESSION['cargo'] == "Vendedor(a)"): ?><!---Vendedor(a)-->
+		<div id="menu">
+			<a href="?pagina=home" >Home</a>
+			<a href="?pagina=pedidos">Pedido</a>
+		</div>
+		<?php endif;?>
+
+		<?php endif;?>
 			
 	</header>
 

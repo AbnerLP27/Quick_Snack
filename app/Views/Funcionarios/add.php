@@ -25,7 +25,7 @@ $allCargo = $cargo->consultarALLCargo();
 		
 			<legend>Informações do Funcionario</legend>
 
-				<label>Nome Funcionário</label>
+				<label>Nome do Funcionário</label>
 		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-zá\u00C0-\u00FF\s]+$" title="*Apenas letras" 
 		     	maxlength="45"   
 		     	 required>

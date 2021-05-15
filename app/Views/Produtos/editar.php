@@ -7,6 +7,18 @@ require_once('Config/Config.php');
 $prod = new Produtos();
 $produto = $prod->obterLinha($_GET['editar']);
 
+if(empty($produto)){//Caso altere o editar na URL
+
+	print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=produto'>
+		<script type='text/javascript'>
+
+         		window.alert('Produto não encontrado. Tente Novamente.');
+         		
+        </script>"; 
+	
+	exit;
+
+}
 
 ?>
 

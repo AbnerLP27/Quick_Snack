@@ -114,16 +114,29 @@
 
 		if(senha !== "" && confSenha !== ""){
 
+			if(senha.length >= 5){
 
-			if(senha == confSenha){
+				if(senha == confSenha){
 
-				return true;
+					return true;
 
 
-			}else {
+				}else {
 
 				
-				alert("As senhas estão incorretas. Tente novamente.");
+					alert("As senhas estão incorretas. Tente novamente.");
+
+				 	document.getElementById("senha").value = "";
+				 	document.getElementById("confsenha").value = "";
+				 	document.getElementById("senha").focus();
+
+				 	return false;
+
+				}
+
+			}else{
+
+				alert("A senha deve ter no mínimo 5 caracteres. Tente um nova Senha.");
 
 				 document.getElementById("senha").value = "";
 				 document.getElementById("confsenha").value = "";
@@ -132,6 +145,7 @@
 				 return false;
 
 			}
+
 		}
 
 	
