@@ -1,7 +1,7 @@
 <?php
 
 	
-	require_once('Libs/DB/MysqliDb.php');
+	require_once('DB/MysqliDb.php');
 
 
 

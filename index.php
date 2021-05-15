@@ -1,3 +1,14 @@
+<?php
+
+	session_start();
+
+	
+	if(isset($_SESSION['logado'])){//Destruir 
+
+		session_destroy();
+	}
+
+?>
 <!DOCTYPE - html>
 <html lang="pt-br">
 <head>
@@ -6,7 +17,7 @@
 	<meta charset="utf-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
 	<link rel="stylesheet" type="text/css" href="app/Assets/css/loginstyle.css">
-	<link rel="sortcut icon" href="app/Assets/img/logoqs.png" type="image/x-icon">
+	<link rel="sortcut icon" href="App/Assets/img/logoqs.png" type="image/x-icon">
 	<title>Quick Snack - Login</title>
 	
 

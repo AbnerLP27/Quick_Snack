@@ -37,7 +37,7 @@
 
 		
 		
-		<?php if($_SESSION['cargo'] == "Gerente"):?><!--Grente-->>
+		<?php if($_SESSION['cargo'] == "Gerente"):?><!--Gerente-->
 		<div id="menu">
 			
 			<a href="?pagina=home" >Home</a>
