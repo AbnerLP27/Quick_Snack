@@ -16,14 +16,14 @@ class Funcionario extends DataBase {
 
 	public function cadastrarFun($dados){
 
-
-
+		return $this->conn->insert($this->tabela,$dados);
 	}
 
 
 	public function alterarFun($id, $dados){
 
-
+		$db = $this->conn->where('cod_funcionario',$id);
+		return $db->update($this->tabela, $dados);
 
 	}
 
@@ -45,10 +45,10 @@ class Funcionario extends DataBase {
 
 
 
-	public function jaCadastradoFun($cep){
+	public function jaCadastradoFun($dados){
 
 
-
+		return @$this->conn->rawQuery("call funJaCadastrado(?)", $dados);
 
 	}
 
@@ -60,6 +60,12 @@ class Funcionario extends DataBase {
 	}
 
 
+	public function obterLinha($id){
+
+		$db = $this->conn->where("cod_funcionario",$id);
+		return $db->getOne("lista_funcionario");
+
+	}
 
 
 

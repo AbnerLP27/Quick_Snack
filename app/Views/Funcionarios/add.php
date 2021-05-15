@@ -12,11 +12,11 @@ $allCargo = $cargo->consultarALLCargo();
 
 
 
+
 <div class="formulario">
 
 <h1 >Cadastrar Funcionário</h1>
-
-			
+	
 
 
 	<form  method="POST"  action="Controllers/FunCadastrarController.php">
@@ -26,7 +26,7 @@ $allCargo = $cargo->consultarALLCargo();
 			<legend>Informações do Funcionario</legend>
 
 				<label>Nome Funcionário</label>
-		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-z\s]+$" title="*Apenas letras" 
+		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-zá\u00C0-\u00FF\s]+$" title="*Apenas letras" 
 		     	maxlength="45"   
 		     	 required>
 				
@@ -40,7 +40,7 @@ $allCargo = $cargo->consultarALLCargo();
 				
 
 					<label >Login</label>
-					<input type="text"  placeholder="login" disabled id="login" name="login" class="input" required>
+					<input type="text" placeholder="login" id="login" name="loginFun" class="input" readonly required>
 
 					
 					<label>Senha</label>
@@ -68,13 +68,13 @@ $allCargo = $cargo->consultarALLCargo();
 					<label>Cargo</label>
 
 					
-					<select required>
+					<select required name="codigoCargo">
 						
 						<option selected disabled value="">Escolha o cargo</option>
 
 
 						<?php foreach($allCargo as $linha):?>
-						<option name="codigoCurso" value="<?php print $linha['cod_cargo']?>">
+						<option name="codigoCargo" value="<?php print $linha['cod_cargo']?>">
 
 							<?php print $linha['cargo']?>
 

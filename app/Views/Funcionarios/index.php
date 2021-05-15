@@ -84,7 +84,8 @@ $allFun = $fun->consultarALLFun();
 
 			<td><?php print $linha['cargo']?></td>	
 			<td>
-				<a id="editar" href="?pagina=editarfun">
+				<a id="editar" 
+				href="?pagina=editarfun&editar=<?php print $linha['cod_funcionario']?>">
 					Editar
 				</a>
 			</td>

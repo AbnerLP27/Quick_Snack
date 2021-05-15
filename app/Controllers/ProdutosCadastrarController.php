@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
            </script> 
            <META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ../index.php?pagina=addProduto'> ";  
 
-         //header('location: ../index.php?pagina=produto'); 
+        
 
    }
 

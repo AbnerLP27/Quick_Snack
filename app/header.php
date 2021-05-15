@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="Assets/css/controllersstyle.css">
 	<link rel="sortcut icon" href="Assets/img/logoqs.png" type="image/x-icon">
-	<script type="text/javascript" src="JavaScript/javacmd.js"></script>
+	<script type="text/javascript" src="Assets/JavaScript/javacmd.js"></script>
 	<title>Quick Snack - Home</title>
 
 </head>
