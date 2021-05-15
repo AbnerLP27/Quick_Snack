@@ -41,7 +41,7 @@
 		<div id="menu">
 			
 			<a href="?pagina=home">Home</a>
-			<a href="">Pedido</a>
+			<a href="?pagina=pedidos">Pedido</a>
 			<a href="?pagina=produto">Produto</a>
 			<a href="?pagina=mesa">Mesa</a>
 			<a href="?pagina=estoque">Estoque</a>
