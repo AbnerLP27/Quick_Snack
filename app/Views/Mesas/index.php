@@ -9,7 +9,7 @@ $allMesas = $mesa->getAllMesas();
 
 
 ?>
-<h2>Lanchonete - Mesas</h2>
+<h1>Lanchonete - Mesas</h1>
 
 
 <div class="container">

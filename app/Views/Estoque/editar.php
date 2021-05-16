@@ -39,7 +39,7 @@ select{
 
 <div class="formulario">
 
-<h1 >Editar Estoque</h1>
+<h1>Editar Estoque</h1>
 
 			
 

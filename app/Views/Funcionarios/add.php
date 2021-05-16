@@ -15,7 +15,7 @@ $allCargo = $cargo->consultarALLCargo();
 
 <div class="formulario">
 
-<h1 >Cadastrar Funcionário</h1>
+<h1>Cadastrar Funcionário</h1>
 	
 
 

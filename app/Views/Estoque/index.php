@@ -25,7 +25,7 @@
 }
 
 </style>
-<h2>Estoque</h2>
+<h1>Estoque</h1>
 
 
 <div class="container">

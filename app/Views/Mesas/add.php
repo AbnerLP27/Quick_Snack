@@ -13,7 +13,7 @@ select {
 </style>
 <div class="formulario">
 
-<h1 >Lanchonete - Novo Mesa</h1>
+<h1>Lanchonete - Novo Mesa</h1>
 
 			
 

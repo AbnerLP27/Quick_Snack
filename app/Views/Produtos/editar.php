@@ -25,7 +25,7 @@ if(empty($produto)){//Caso altere o editar na URL
 
 <div class="formulario">
 
-<h1 >Editar Produto</h1>
+<h1>Editar Produto</h1>
 
 			
 

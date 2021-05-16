@@ -31,7 +31,7 @@ $allFun = $fun->consultarALLFun();
 	
 </style>
 
-<h2>Funcionários</h2>
+<h1>Funcionários</h1>
 
 <div class="container">
 

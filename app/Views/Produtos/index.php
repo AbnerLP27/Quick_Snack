@@ -27,7 +27,7 @@ $allProds = $produtos->consultarALLProd();
 	
 </style>
 
-<h2>Produtos</h2>
+<h1>Produtos</h1>
 
 <div class="container">
 

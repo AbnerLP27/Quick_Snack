@@ -27,7 +27,7 @@ select{
 
 <div class="formulario">
 
-<h1 >Novo Estoque</h1>
+<h1>Novo Estoque</h1>
 
 			
 

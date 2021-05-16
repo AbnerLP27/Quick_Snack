@@ -34,7 +34,7 @@ print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=funcionario'>
 
 <div class="formulario">
 
-<h1 >Editar Funcionário</h1>
+<h1>Editar Funcionário</h1>
 	
 
 

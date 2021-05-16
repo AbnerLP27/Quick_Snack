@@ -31,7 +31,7 @@ $allPed = $pedidos->consultarALLPed();
 	
 </style>
 
-<h2>Pedidos</h2>
+<h1>Pedidos</h1>
 
 <div class="container">
         <a id="newElement" href="?pagina=home">
@@ -73,7 +73,7 @@ $allPed = $pedidos->consultarALLPed();
 			<td><?php echo $linha['data']?></td>
 			<td><?php echo $linha['situacao']?></td>
             <td><?php echo $linha['desconto']?>%</td>
-            <td><?php echo $linha['nome']?></td>
+            <td><?php echo $linha['Vendedor(a)']?></td>
             <td><?php echo $linha['cod_mesa']?></td>
 
 		</tr>
