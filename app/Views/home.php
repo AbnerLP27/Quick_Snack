@@ -5,7 +5,7 @@ require('Config/config.php');
 
 $pedidos = new Pedidos();
 
-$allPed = $pedidos->consultarALLPed();
+$allPed = $pedidos->consultarALLPedDia();
 
 ?>
 

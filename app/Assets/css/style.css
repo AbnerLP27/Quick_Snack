@@ -22,14 +22,14 @@ body {
 
 .App {
 
-  min-height: 98vh;
+  min-height: 105vh;
   display: flex;
   flex-direction: column;
   
 }
 
 h1 {
-
+	margin-top: 5px;
 	text-align: center; 
 	color: black;
 }
@@ -67,7 +67,8 @@ main {
 	content: url("../img/exit_32.png");
 }
 
-#menu{
+
+.menuHeader{
 
 	margin-top: 75px;
 	display: flex;
@@ -76,7 +77,8 @@ main {
   	flex-direction: row;	
 }
 
-#menu a{
+.menuHeader a{
+	
 	text-decoration: none;/* Tirar o anderline do texto*/
 	border: 2px solid #000;
 	padding-right: 50px;

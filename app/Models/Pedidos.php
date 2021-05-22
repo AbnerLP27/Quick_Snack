@@ -50,6 +50,17 @@ class Pedidos extends DataBase {
 
 
 	/*
+		[ Consultar todos os pedidos do Dia ]	
+	*/
+	public function consultarALLPedDia(){
+
+
+		return $this->conn->get('lista_pedidosDia');//Editar tabela no banco
+
+
+	}
+
+	/*
 		[ Consultar todos os pedidos  ]	
 	*/
 	public function consultarALLPed(){
@@ -59,7 +70,6 @@ class Pedidos extends DataBase {
 
 
 	}
-
 
 	/*
 		[ Obter uma linha da tabela de pedidos ]
