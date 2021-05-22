@@ -45,6 +45,8 @@ if(isset($_SESSION['logado'])){//se existe Logado
 
 			case 'home':include VIEWS.'home.php';break;
 			case 'pedidos':include 'Views/Pedidos/index.php';break;
+			case 'novoPed':include 'Views/Pedidos/novoPed.php';break;
+			case 'consultarPed':include 'Views/Pedidos/consultarPed.php';break;
 			case 'produto': include	PRODUTOS.'index.php'; break;
 			case 'addProduto': include	PRODUTOS.'add.php'; break;
 			case 'editarProduto': include PRODUTOS.'editar.php'; break;
@@ -65,6 +67,8 @@ if(isset($_SESSION['logado'])){//se existe Logado
 
 			case 'home':include 'Views/home.php';break;
 			case 'pedidos':include 'Views/Pedidos/index.php';break;
+			case 'novoPed':include 'Views/Pedidos/novoPed.php';break;
+			case 'consultarPed':include 'Views/Pedidos/consultarPed.php';break;
 			
 			default: include 'Views/home.php';break;
 		}

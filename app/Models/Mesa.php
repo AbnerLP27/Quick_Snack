@@ -21,10 +21,34 @@ class Mesa extends DataBase{
 
 	}
 
+	/*[ Selecionar Mesa ]*/
+	public function selectMesa($params){
+
+		return @$this->conn->rawQuery("call selectmesa(?)",$params);
+	}
+
+	/*[ Selecionar Todas as Mesas ]*/
 	public function getAllMesas(){
 
-		return $this->conn->get($this->tabela);
+		return $this->conn->get('lista_allmesa');
 	}
+
+
+	/*[ Selecionar Mesas InDisponíveis ]*/
+	public function getAllMesasInd(){
+
+		return $this->conn->get('lista_mind');
+	}
+
+
+
+	/*[ Selecionar Mesas Disponíveis ]*/
+	public function getAllMesasDis(){
+
+		return $this->conn->get('lista_mesa');
+	}
+
+
 
 
 

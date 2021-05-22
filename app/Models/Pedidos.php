@@ -17,37 +17,14 @@ class Pedidos extends DataBase {
 
 
 	/*
-		[ cadastrar um Pedido ]
+		[ Registrar um Pedido ]
 	*/
-	public function cadastrarPedido($dados){
+	public function registrarPedido($dados){
 
-		return $this->conn->insert($this->tabela,$dados);
+		return $this->conn->rawQuery('call registrarped(?,?,?)',$dados);
 
 
 	} 
-
-	/*
-			[ Editar um Pedido ]		
-	*/
-	public function editarPedido($id, $dados){
-
-		$db = $this->conn->where("cod_pedido",$id);
-		return $db->update($this->tabela,$dados);
-
-	}
-
-
-	/*
-		[ Abrir e fechar um pedido ]
-	*/
-	public function situacaoPedido($dados){
-		
-		return $this->conn->rawQuery("Select situacao",array($dados));
-		 
-
-		
-	}
-
 
 	/*
 		[ Consultar todos os pedidos do Dia ]	
@@ -71,14 +48,11 @@ class Pedidos extends DataBase {
 
 	}
 
-	/*
-		[ Obter uma linha da tabela de pedidos ]
-	*/
-	public function obterLinha($id){
 
-		$db = $this->conn->where("cod_pedido",$id);
-		return $db->getOne($this->tabela);
 
-	}
+
+
+
+	
 
 }
