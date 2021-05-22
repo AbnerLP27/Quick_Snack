@@ -16,11 +16,16 @@ $allMesas = $mesa->getAllMesas();
 
 	
 
-	<a id="newElement" href="?pagina=addMesa">
+	<div class="menucontrollers">
 
-		Nova Mesa
-	</a>
-	<table id="table">
+		<a href="?pagina=addMesa">
+
+			Nova Mesa
+		</a>
+
+	</div>
+	
+	<table class="table">
 	
 
 	<thead>

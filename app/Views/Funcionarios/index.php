@@ -13,23 +13,7 @@ $allFun = $fun->consultarALLFun();
 
 ?>
 
-<style type="text/css">
-	
-#editar{
 
-	text-decoration: none;
-	border: 2px solid black; 
-	border-radius: 5px;
-	background-color: #ca0035;
-	color: white;
-	padding: 5;
-	font: 13px verdana;
-	cursor: pointer;
-
-
-}
-	
-</style>
 
 <h1>Funcionários</h1>
 
@@ -37,11 +21,15 @@ $allFun = $fun->consultarALLFun();
 
 	
 
-	<a id="newElement" href="?pagina=addfun">
+	<div class="menucontrollers">
+		
+		<a  href="?pagina=addfun">
 
-		Cadastrar Funcionario
-	</a>
-	<table id="table">
+			Cadastrar Funcionario
+		</a>
+
+	</div>
+	<table class="table">
 	
 
 	<thead>
@@ -84,7 +72,7 @@ $allFun = $fun->consultarALLFun();
 
 			<td><?php print $linha['cargo']?></td>	
 			<td>
-				<a id="editar" 
+				<a class="btneditar" 
 				href="?pagina=editarfun&editar=<?php print $linha['cod_funcionario']?>">
 					Editar
 				</a>

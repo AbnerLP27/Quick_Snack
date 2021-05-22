@@ -24,12 +24,8 @@ select{
 
 
 </style>
-
-<div class="formulario">
-
 <h1>Novo Estoque</h1>
-
-			
+<div class="formulario">
 
 
 	<form  method="POST" action="Controllers/EstoqueRegistrarController.php">
@@ -63,7 +59,7 @@ select{
 
 					
 			
-				<button id="botao" type="submit" name="submit">Novo Estoque</button>
+				<button class="botao" type="submit" name="submit">Novo Estoque</button>
 
 		</fieldset>
 

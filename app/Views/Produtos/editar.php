@@ -22,10 +22,8 @@ if(empty($produto)){//Caso altere o editar na URL
 
 ?>
 
-
-<div class="formulario">
-
 <h1>Editar Produto</h1>
+<div class="formulario">
 
 			
 
@@ -62,7 +60,7 @@ if(empty($produto)){//Caso altere o editar na URL
 				</label>
 					
 
-				<button id="botao" type="submit" name="submit">Editar</button>
+				<button class="botao" type="submit" name="submit">Editar</button>
 
 		</fieldset>
 

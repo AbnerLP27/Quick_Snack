@@ -10,34 +10,22 @@ $allProds = $produtos->consultarALLProd();
 
 ?>
 
-<style type="text/css">
-	
-#editar{
 
-	text-decoration: none;
-	border: 2px solid black; 
-	border-radius: 5px;
-	background-color: #ca0035;
-	color: white;
-	padding: 5;
-	font: 13px verdana;
-
-
-}
-	
-</style>
 
 <h1>Produtos</h1>
 
 <div class="container">
 
 	
+	<div class="menucontrollers">
 
-	<a id="newElement" href="?pagina=addProduto">
+		<a href="?pagina=addProduto">
+			Novo Produto
+		</a>
 
-		Novo Produto
-	</a>
-	<table id="table">
+	</div>
+	
+	<table class="table">
 	
 
 	<thead>
@@ -79,7 +67,7 @@ $allProds = $produtos->consultarALLProd();
 
 			<td>
 			
-				<a id="editar" 
+				<a class="btneditar" 
 					href="?pagina=editarProduto&editar=<?php echo $linha['cod_produto'] ?>">	
 					Editar
 				</a>

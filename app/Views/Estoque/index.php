@@ -9,22 +9,7 @@
 
 ?>
 
-<style type="text/css">
-	
-#editar{
 
-	text-decoration: none;
-	border: 2px solid black; 
-	border-radius: 5px;
-	background-color: #ca0035;
-	color: white;
-	padding: 5;
-	font: 13px verdana;
-	cursor: pointer;
-
-}
-
-</style>
 <h1>Estoque</h1>
 
 
@@ -32,11 +17,15 @@
 
 	
 
-	<a id="newElement" href="?pagina=addEstoque">
+	<div class="menucontrollers">
 
-		Novo Estoque
-	</a>
-	<table id="table">
+		<a  href="?pagina=addEstoque">
+
+			Novo Estoque
+		</a>
+
+	</div>
+	<table class="table">
 	
 
 	<thead>
@@ -66,7 +55,7 @@
 			<td><?php echo $linha['minimo'];?></td>
 			<td><?php echo $linha['data_cad']?></td>
 			<td>
-				<a id="editar" 
+				<a class="btneditar" 
 					href="?pagina=editarEstoque&editar=<?php echo $linha['cod_produto'] ?>">
 
 					Editar

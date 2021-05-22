@@ -118,7 +118,7 @@ print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=funcionario'>
 			
 				
 
-				<button id="botao" type="submit" onclick="return validar()" name="submit">
+				<button class="botao" type="submit" onclick="return validar()" name="submit">
 
 					Editar
 

@@ -38,7 +38,7 @@
 		
 		
 		<?php if($_SESSION['cargo'] == "Gerente"):?><!--Gerente-->
-		<div id="menu">
+		<div class="menuHeader">
 			
 			<a href="?pagina=home" >Home</a>
 			<a href="?pagina=pedidos">Pedido</a>
@@ -48,7 +48,7 @@
 			<a href="?pagina=funcionario">Funcionario</a>
 		</div>
 		<?php elseif($_SESSION['cargo'] == "Vendedor(a)"): ?><!---Vendedor(a)-->
-		<div id="menu">
+		<div class="menuHeader">
 			<a href="?pagina=home" >Home</a>
 			<a href="?pagina=pedidos">Pedido</a>
 		</div>

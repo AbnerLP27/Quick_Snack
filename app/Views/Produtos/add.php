@@ -1,15 +1,15 @@
 
 
 
-
+<h1>Novo Produto</h1>
 <div class="formulario">
 
-<h1>Novo Produto</h1>
+
 
 			
 
 
-	<form  method="POST" action="Controllers/ProdutosCadastrarController.php">
+	<form  class="forms" method="POST" action="Controllers/ProdutosCadastrarController.php">
 		
 	    <fieldset>
 		
@@ -33,7 +33,7 @@
 				</label>
 					
 
-				<button id="botao" type="submit" name="submit">Cadastrar</button>
+				<button class="botao" type="submit" name="submit">Cadastrar</button>
 
 		</fieldset>
 

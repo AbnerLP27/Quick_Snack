@@ -11,17 +11,13 @@ $allCargo = $cargo->consultarALLCargo();
 
 
 
-
+<h1>Cadastrar Funcionário</h1>
 
 <div class="formulario">
 
-<h1>Cadastrar Funcionário</h1>
-	
-
-
-	<form  method="POST"  action="Controllers/FunCadastrarController.php">
+	<form  class="formfun" method="POST"  action="Controllers/FunCadastrarController.php">
 		
-	    <fieldset>
+	    <fieldset class="fieldsetfun">
 		
 			<legend>Informações do Funcionario</legend>
 
@@ -68,7 +64,7 @@ $allCargo = $cargo->consultarALLCargo();
 					<label>Cargo</label>
 
 					
-					<select required name="codigoCargo">
+					<select class="selectfun" required name="codigoCargo">
 						
 						<option selected disabled value="">Escolha o cargo</option>
 
@@ -93,11 +89,9 @@ $allCargo = $cargo->consultarALLCargo();
 			
 				
 
-				<button id="botao" type="submit" onclick="return validar()" name="submit">Cadastrar</button>
+				<button class="botao" type="submit" onclick="return validar()" name="submit">Cadastrar</button>
 
 		</fieldset>
-
-
 
 	</form>
 

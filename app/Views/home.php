@@ -12,13 +12,13 @@ $allPed = $pedidos->consultarALLPedDia();
 
 <h1>Pedidos do Dia</h1>
 
-<div class="listPeds">
+<div class="listPedsHome">
 	
 
 <?php if(!empty($allPed)):?>
 
 	<?php foreach($allPed as $linha):?>
-	<ul class="listaped">
+	<ul class="listapedHome">
 		
 		<li>Pedido: <?php print $linha['cod_pedido']?></li>
 		<li>Data: <?php print $linha['data']?></li>
@@ -30,7 +30,7 @@ $allPed = $pedidos->consultarALLPedDia();
 	<?php endforeach;?>
 <?php else:?>
 
-	<ul class="listaped">
+	<ul class="listapedHome">
 		
 		<li>Nenhum Pedido Encontrado</li>
 		

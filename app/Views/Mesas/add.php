@@ -11,12 +11,9 @@ select {
 }
 	
 </style>
-<div class="formulario">
 
 <h1>Lanchonete - Novo Mesa</h1>
-
-			
-
+<div class="formulario">
 
 	<form  method="POST" action="Controllers/MesaRegistrarController.php">
 		
@@ -36,7 +33,7 @@ select {
 				
 
 
-				<button id="botao" type="submit" name="submit">Registrar Mesa</button>
+				<button class="botao" type="submit" name="submit">Registrar Mesa</button>
 
 		</fieldset>
 

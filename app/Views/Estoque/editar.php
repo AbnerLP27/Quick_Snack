@@ -36,19 +36,15 @@ select{
 
 
 </style>
-
-<div class="formulario">
-
 <h1>Editar Estoque</h1>
 
-			
-
+<div class="formulario">
 
 	<form  method="POST" action="Controllers/EstoqueEditarController.php">
 		
 	    <fieldset>
 		
-			<legend>Informações Produto Estoque</legend>
+			<legend>Informações do Produto em Estoque</legend>
 
 				<select  name="prod" id="prod" required>
 
@@ -69,7 +65,7 @@ select{
 
 					
 			
-				<button id="botao" type="submit" name="submit">Editar Estoque</button>
+				<button class="botao" type="submit" name="submit">Editar Estoque</button>
 
 		</fieldset>
 
