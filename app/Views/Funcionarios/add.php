@@ -22,17 +22,14 @@ $allCargo = $cargo->consultarALLCargo();
 			<legend>Informações do Funcionario</legend>
 
 				<label>Nome do Funcionário</label>
-		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-zá\u00C0-\u00FF\s]+$" title="*Apenas letras" 
-		     	maxlength="45"   
-		     	 required>
+		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-zá\u00C0-\u00FF\s]+$" title="*Apenas letras" maxlength="45"  required>
 				
 
 				<div id="esquerda">	
 					
 					<label >CEP</label>
 					<input type="text="  placeholder="00000-000" name="cep" class="input"
-					pattern="\d{5}-\d{3}" 
-					maxlength="10" title="00000-000" required>
+					pattern="\d{5}-\d{3}" maxlength="10" title="00000-000" required>
 				
 
 					<label >Login</label>
@@ -40,8 +37,7 @@ $allCargo = $cargo->consultarALLCargo();
 
 					
 					<label>Senha</label>
-					<input type="password" placeholder="Senha" id="senha" name="senha" class="input"
-					 maxlength="100" required>
+					<input type="password" placeholder="Senha" id="senha" name="senha" class="input" maxlength="100" required>
 				
 					<label id="ativado">
 				
@@ -56,21 +52,18 @@ $allCargo = $cargo->consultarALLCargo();
 				<div id="direita">
 
 					<label>Telefone/Celular</label>
-					<input type="text" placeholder="(11) 99999-9999" name="tel_cel" class="input"  
-					pattern="\(\d{2}\)\s*\d{5}-\d{4}" 
-					title="(11) 11111-1111" maxlength="15" required>
+					<input type="text" placeholder="(11) 99999-9999" name="tel_cel" class="input" pattern="\(\d{2}\)\s*\d{5}-\d{4}" title="(11) 11111-1111" maxlength="15" required>
 
 			
 					<label>Cargo</label>
-
-					
 					<select class="selectfun" required name="codigoCargo">
 						
 						<option selected disabled value="">Escolha o cargo</option>
 
 
 						<?php foreach($allCargo as $linha):?>
-						<option name="codigoCargo" value="<?php print $linha['cod_cargo']?>">
+						<option name="codigoCargo" 
+								value="<?php print $linha['cod_cargo']?>">
 
 							<?php print $linha['cargo']?>
 

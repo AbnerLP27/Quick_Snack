@@ -16,11 +16,11 @@
 			<legend>Informações do Produto</legend>
 
 				<label>Descrição</label>
-		     	<input type="text" autofocus required name="descricao" placeholder="Descrição" class="input">
+		     	<input type="text" maxlength="45" autofocus required name="descricao" placeholder="Descrição" class="input">
 					
 					
 				<label for="preco">Preço de venda</label>
-				<input type="number" step="any" min="0" max="1000" required  placeholder="R$ 00,00" name="preco" class="input">
+				<input type="number" step="any" min="1" max="1000" required  placeholder="R$ 00,00" maxlength="45" name="preco" class="input">
 
 					
 				<label for="desconto">Desconto</label>

@@ -45,11 +45,12 @@ print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=funcionario'>
 			<legend>Informações do Funcionario</legend>
 
 			<input type="hidden" name="idFun" 
-			value="<?php isset($fun['cod_funcionario']) ? print $fun['cod_funcionario'] : ''; ?>">
+				   value="<?php isset($fun['cod_funcionario']) ? 
+				   print $fun['cod_funcionario'] : ''; ?>">
 
 				<label>Nome do Funcionário</label>
-		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-zá\u00C0-\u00FF\s]+$" title="*Apenas letras" 
-		     	maxlength="45" required 
+		     	<input type="text" autofocus name="nome" id="nome" placeholder="Nome Completo" class="input" pattern="[a-zA-zá\u00C0-\u00FF\s]+$" 
+		     	title="*Apenas letras" maxlength="45" required 
 		     	value="<?php isset($fun['nome']) ? print $fun['nome'] : ''; ?>">
 				
 
@@ -73,7 +74,8 @@ print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=funcionario'>
 					<label id="ativado">
 					<input type="checkbox"  name="ativado" 
 
-					<?php if(isset($fun['ativado'])):$fun['ativado'] == 1 ? print 'checked' : '';
+					<?php if(isset($fun['ativado'])):$fun['ativado'] == 1 ? 
+													 print 'checked' : '';
 						  endif;?>>
 					
 						Ativado
@@ -85,8 +87,8 @@ print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=funcionario'>
 				<div id="direita">
 
 					<label>Telefone/Celular</label>
-					<input type="text" placeholder="(11) 99999-9999" name="tel_cel" class="input"  
-					pattern="\(\d{2}\)\s*\d{5}-\d{4}" title="(11) 11111-1111" maxlength="15" required value="<?php isset($fun['tel_cel']) ? print $fun['tel_cel'] : ''?>">
+					<input type="text" placeholder="(11) 99999-9999" name="tel_cel" class="input" pattern="\(\d{2}\)\s*\d{5}-\d{4}" title="(11) 11111-1111" maxlength="15" required 
+					value="<?php isset($fun['tel_cel']) ? print $fun['tel_cel'] : ''?>">
 
 			
 					<label>Cargo</label>
@@ -94,10 +96,10 @@ print "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL= ?pagina=funcionario'>
 						
 						<option selected disabled value="">Escolha o cargo</option>
 
-
 						<?php foreach($allCargo as $linha):?>
 
-						<option name="codigoCargo" value="<?php print $linha['cod_cargo'];?>"
+						<option name="codigoCargo" 
+								value="<?php print $linha['cod_cargo'];?>"
 						<?php if(isset($fun['cargo'])): $linha['cargo'] == $fun['cargo'] ? print 'selected' : '';endif; ?>>
 
 								<?php print $linha['cargo']?>

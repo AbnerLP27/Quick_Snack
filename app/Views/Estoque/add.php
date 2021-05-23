@@ -36,11 +36,14 @@ select{
 
 				<select required name="codigoProd">
 
-					<option selected disabled value="">Selecione produto sem estoque......</option>
+					<option selected disabled value="">
+						Selecione produto sem estoque......
+					</option>
 
 					<?php foreach($prodSemEtq as $linha):?>
 
-					<option  name="codigoProd" value="<?php print $linha['cod_produto']?>">
+					<option  name="codigoProd" 
+							 value="<?php print $linha['cod_produto']?>">
 
 						<?php print $linha['descricao']?>
 
@@ -51,11 +54,11 @@ select{
 				</select>
 
 				<label>Quantidade</label>
-		     	<input type="number" min="1" max="1000" required name="qtd" placeholder="0" class="input">
+		     	<input type="number" min="1" max="999" required name="qtd" placeholder="0" class="input">
 					
 					
 				<label for="preco">Mínimo</label>
-				<input type="number" min="1" max="1000" required  placeholder="0" name="min" class="input">
+				<input type="number" min="1" max="999" required  placeholder="0" name="min" class="input">
 
 					
 			

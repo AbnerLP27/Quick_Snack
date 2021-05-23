@@ -33,28 +33,33 @@ if(empty($produto)){//Caso altere o editar na URL
 		
 			<legend>Informações do Produto</legend>
 
-				<input type="hidden" name="codigo" value="<?php echo $produto['cod_produto']; ?>">
+				<input type="hidden" name="codigo" 
+					   value="<?php echo $produto['cod_produto']; ?>">
 
 				<label>Descrição</label>
-		     	<input type="text" required name="descricao" placeholder="Descrição" class="input"
-		     	value="<?php isset($produto['descricao']) ? print $produto['descricao'] : '' ?>">
+		     	<input type="text" autofocus required name="descricao" placeholder="Descrição" class="input" maxlength="45"
+		     	value="<?php isset($produto['descricao']) ? 
+		     				  print $produto['descricao'] : '' ?>">
 					
 					
 				<label for="preço">Preço de venda</label>
 				<input type="text" type="number" step="any" min="0" max="1000" required  placeholder="R$ 00,00" name="preco" class="input"
-				value="<?php isset($produto['preco_venda']) ? print $produto['preco_venda'] : ''?>">
+				value="<?php isset($produto['preco_venda']) ? 
+							 print $produto['preco_venda'] : ''?>">
 
 					
 				<label for="desconto">Desconto</label>
 				<input type="text" type="number" step="any" min="0" max="1000" required placeholder="0%" name="desconto" class="input"
-				value="<?php isset($produto['max_desconto']) ?print $produto['max_desconto'] : '' ?>">
+				value="<?php isset($produto['max_desconto']) ?
+							 print $produto['max_desconto'] : '' ?>">
 
 				<label for="qty">
 					<input type="checkbox"  name="descontinuado"  id="descontinuado" 
-					<?php if (isset($produto['descontinuado'])){
+					<?php if (isset($produto['descontinuado'])):
+							$produto['descontinuado'] == 1 ? print "checked" : '';
+						  endif; 
 
-						$produto['descontinuado'] == 1 ? print "checked" : ''; }?>
-					 >
+						?>>
 					
 					Descontinuado
 				</label>
