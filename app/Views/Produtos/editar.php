@@ -43,9 +43,10 @@ if(empty($produto)){//Caso altere o editar na URL
 					
 					
 				<label for="preço">Preço de venda</label>
-				<input type="text" type="number" step="any" min="0" max="1000" required  placeholder="R$ 00,00" name="preco" class="input"
+				<input type="text" type="number" step="any" min="1" max="1000" required  placeholder="R$ 00,00" name="preco" class="input" maxlength="45"
 				value="<?php isset($produto['preco_venda']) ? 
 							 print $produto['preco_venda'] : ''?>">
+
 
 					
 				<label for="desconto">Desconto</label>

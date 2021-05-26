@@ -27,10 +27,11 @@
      }
 
 
-     if (!request)
+     if (!request){
          alert("Seu Navegador não suporta Ajax!");
-     else
+     }else{
          return request;
+     }
  }
 
 

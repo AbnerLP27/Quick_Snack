@@ -23,7 +23,7 @@ body {
 
 .App {
 
-  min-height: 105vh;
+  min-height: 105vh;/*min-height: 105vh;*/
   display: flex;
   flex-direction: column;
   

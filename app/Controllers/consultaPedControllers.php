@@ -11,8 +11,10 @@ if (isset($_GET["codmesa"])) {
 
     /*====[ Consultar Pedido que está na mesa ]*/
     $mesa = new Mesa();
+    
     $params = Array('cod' => $cod);
     $result =  $mesa->selectMesa($params);
+
 
     /*===[ Consultar todo os itens pedidos do pedido ]*/
     $itens = new ItensPedido();

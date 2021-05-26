@@ -4,10 +4,9 @@ require('../Config/config.php');
 
 if(isset($_POST['submit'])){
 
-
   $cod = $_POST['codigo'];
 	$desc = $_POST['descricao'];
-	$preco = $_POST['preco'];
+	$preco = str_replace(',','.',$_POST['preco']);
 	$desconto = $_POST['desconto'];
 	$descont = 0;
 
@@ -15,7 +14,6 @@ if(isset($_POST['submit'])){
 
 			$descont  =  1;
    }
-
 
 
    $editarProd = array("cod_produto" => $cod,
